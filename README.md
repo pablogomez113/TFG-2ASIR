@@ -1,45 +1,40 @@
-TFG-2ASIR – Implementación de Infraestructura Crítica
+# TFG-2ASIR – Implementación de infraestructura crítica
 
-Descripción del proyecto
+## Descripción del proyecto
 
-Este proyecto consiste en el diseño, configuración e implementación de una infraestructura informática orientada a la gestión de servicios IT en pequeñas y medianas empresas.
+Este proyecto consiste en diseñar e implementar una infraestructura informática virtualizada para centralizar servicios IT, mejorar la seguridad de la red y automatizar la gestión de incidencias.
 
-La infraestructura está basada en Proxmox VE como plataforma principal de virtualización, desde la que se despliegan y administran diferentes servicios mediante máquinas virtuales y contenedores.
+La infraestructura se desplegará sobre **Proxmox VE**, utilizando máquinas virtuales y contenedores para alojar los distintos servicios.
 
-El objetivo principal es crear un entorno centralizado, seguro y eficiente que permita gestionar los recursos informáticos, mejorar la seguridad de la red y automatizar tareas habituales de administración de sistemas.
+## Objetivo
 
-Tecnologías utilizadas
+Crear un entorno centralizado, seguro y eficiente que permita administrar recursos informáticos y facilitar el soporte técnico mediante herramientas de gestión, automatización e inteligencia artificial.
 
-Proxmox VE: plataforma de virtualización para gestionar servidores, máquinas virtuales y contenedores.
+## Tecnologías previstas
 
-CasaOS: entorno de administración de aplicaciones y servicios mediante contenedores Docker.
+- **Proxmox VE:** plataforma de virtualización.
+- **CasaOS y Docker:** administración y despliegue de aplicaciones en contenedores.
+- **Pi-hole:** filtrado DNS y bloqueo de dominios no deseados.
+- **GLPI:** gestión de incidencias y solicitudes del CAU.
+- **n8n:** automatización e integración de servicios.
+- **Llama 3.3 70B mediante Groq:** agente de IA para analizar y clasificar incidencias.
 
-Pi-hole: servicio DNS para bloquear publicidad, rastreadores y dominios no deseados.
+## Alcance inicial
 
-GLPI: sistema de gestión de incidencias y solicitudes del Centro de Atención al Usuario (CAU).
+La primera fase contempla preparar el entorno de virtualización, desplegar los servicios principales y estudiar su integración. Como línea de trabajo, se plantea conectar GLPI con n8n y un agente de IA para clasificar tickets, proponer respuestas automáticas cuando sea posible y derivar al técnico los casos que requieran intervención humana.
 
-n8n: herramienta de automatización para conectar servicios y crear flujos de trabajo.
+La configuración y las funcionalidades se irán documentando conforme avance el desarrollo.
 
-Inteligencia Artificial: integración de un agente basado en Llama 3.3 70B mediante Groq para analizar, clasificar y gestionar incidencias.
+## Estructura actual
 
-Funcionamiento del proyecto
+- `README.md`: presentación, objetivos y tecnologías del proyecto.
+- `TFG-2 ASIR/`: documentación inicial del proyecto en PDF.
 
-Uno de los aspectos principales es la integración de GLPI con n8n y un agente de inteligencia artificial.
+## Autores
 
-El sistema permite detectar nuevos tickets, analizar su contenido y clasificarlos según el tipo de incidencia. Las consultas que pueden resolverse mediante instrucciones técnicas reciben una respuesta automática, mientras que los problemas que necesitan intervención humana se notifican al técnico responsable.
+- Pablo Gómez
+- Izan Villalba
 
-De esta forma, se consigue reducir el trabajo manual y mejorar la gestión de las incidencias informáticas.
+## Estado del proyecto
 
-Objetivos
-
-Implementar una infraestructura virtualizada con Proxmox VE.
-
-Centralizar diferentes servicios informáticos.
-
-Mejorar la seguridad y el control del tráfico de red.
-
-Gestionar incidencias mediante GLPI.
-
-Automatizar procesos utilizando n8n.
-
-Integrar inteligencia artificial en la gestión del CAU.
+**Fase inicial:** documentación y definición del alcance. Este repositorio recogerá la evolución del proyecto y sus sucesivas versiones.
